@@ -29,6 +29,6 @@ var server = http.createServer(function(req, res) {
   });
 });
 
-var port = process.env.PORT;
+var port = process.env.PORT || 5050;
 console.log("listening on port " + port)
-server.listen(port||5050);
+server.listen(port);
